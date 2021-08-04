@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/testing", (req, res) => {
-  res.json({ message: "Testing works" });
+  res.json({ message: "Testing works properly" });
 });
 
 app.get("/healthzLive", (req, res) => {
