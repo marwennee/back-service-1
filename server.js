@@ -38,6 +38,11 @@ db.mongoose
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Elyadata application." });
 });
+
+app.get("/testing", (req, res) => {
+  res.json({ message: "Testing works" });
+});
+
 app.get("/healthzLive", (req, res) => {
   try{
     Tutorial.find({})
