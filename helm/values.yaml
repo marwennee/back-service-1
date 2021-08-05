@@ -1,6 +1,6 @@
 metadata:
   name: sample-nodejs
-  namespace: testingg
+  namespace: testing
 
 service:
   name: nodejs-service
