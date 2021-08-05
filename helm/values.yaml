@@ -1,6 +1,6 @@
 metadata:
   name: sample-nodejs
-  namespace: testing
+  namespace: testingg
 
 service:
   name: nodejs-service
@@ -55,8 +55,16 @@ ingress:
   name: nodejs-ingress
   className: ""
   annotations: {}
-  hosts:
-  - elyadata-devops-back.com
+  rules:
+    - host: elyadata-devops-back.com
+      http:
+        paths:
+          - path: /
+            backend:
+              service:
+                name: nodejs-service
+                port:
+                  number: 8080
 
 autoscaling:
   enabled: true
