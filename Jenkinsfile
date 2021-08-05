@@ -1,7 +1,7 @@
 pipeline {
     environment {
         DEPLOY = "${env.BRANCH_NAME == "main" || env.BRANCH_NAME == "develop" ? "true" : "false"}"
-        NAME = "back-service-1"
+        NAME = "back-svc-1"
         VERSION = env.GIT_COMMIT.take(7)
         REGISTRY = 'marwenguesmii/nodejsapp'
         REGISTRY_CREDENTIAL = 'dockerhub'
